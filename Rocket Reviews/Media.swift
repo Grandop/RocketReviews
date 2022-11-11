@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Media{
+struct Media{
     
     let title : String
     let image : UIImage

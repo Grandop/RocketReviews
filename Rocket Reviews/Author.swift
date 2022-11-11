@@ -8,7 +8,7 @@
 import UIKit
 
 
-class Author{
+struct Author{
     let name : String
     var avatar : UIImage
     let description : String

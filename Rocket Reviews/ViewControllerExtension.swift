@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 // MARK: Authors and Medias
 // esse é o arquivo que gera os autores e as mídias pro MediaListViewController
@@ -47,7 +48,7 @@ extension HomeViewController {
             ),
             Author(
                 name: "Otávio",
-                avatar: #imageLiteral(resourceName: "Raul"),
+                avatar: #imageLiteral(resourceName: "Pedro"),
                 description: "Oii, sou o Otávio, tenho 18 anos, adoro jogar qualquer tipo de games, praticar vários esporte nas horas vagas e adoro sair para conversar no sol.",
                 github: "https://github.com/Otavinhofs",
                 instagram: "https://www.instagram.com/otavinhofs/",

@@ -19,6 +19,9 @@
 		C1A2F95D291EA7CA0089AB3F /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2F95C291EA7CA0089AB3F /* ViewControllerExtension.swift */; };
 		F624E38F291EBF65007486A6 /* MediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F624E38E291EBF65007486A6 /* MediaCell.swift */; };
 		F624E391291EC70C007486A6 /* MediaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F624E390291EC70C007486A6 /* MediaStoryboard.storyboard */; };
+		F624E393291ECC9B007486A6 /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F624E392291ECC9B007486A6 /* MediaViewController.swift */; };
+		F624E397291ED9B3007486A6 /* AuthorStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F624E396291ED9B3007486A6 /* AuthorStoryboard.storyboard */; };
+		F624E399291ED9C6007486A6 /* AuthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F624E398291ED9C6007486A6 /* AuthorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		C1A2F95C291EA7CA0089AB3F /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		F624E38E291EBF65007486A6 /* MediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCell.swift; sourceTree = "<group>"; };
 		F624E390291EC70C007486A6 /* MediaStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MediaStoryboard.storyboard; sourceTree = "<group>"; };
+		F624E392291ECC9B007486A6 /* MediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
+		F624E396291ED9B3007486A6 /* AuthorStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AuthorStoryboard.storyboard; sourceTree = "<group>"; };
+		F624E398291ED9C6007486A6 /* AuthorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,13 +77,16 @@
 			children = (
 				C1A2F940291E89BD0089AB3F /* AppDelegate.swift */,
 				C1A2F942291E89BD0089AB3F /* SceneDelegate.swift */,
-				C1A2F944291E89BD0089AB3F /* HomeViewController.swift */,
 				C1A2F95C291EA7CA0089AB3F /* ViewControllerExtension.swift */,
 				F624E38E291EBF65007486A6 /* MediaCell.swift */,
 				306BE77B291EB5A9000D8223 /* Media.swift */,
 				306BE779291EB36A000D8223 /* Author.swift */,
+				C1A2F944291E89BD0089AB3F /* HomeViewController.swift */,
 				C1A2F946291E89BD0089AB3F /* Main.storyboard */,
+				F624E392291ECC9B007486A6 /* MediaViewController.swift */,
 				F624E390291EC70C007486A6 /* MediaStoryboard.storyboard */,
+				F624E398291ED9C6007486A6 /* AuthorViewController.swift */,
+				F624E396291ED9B3007486A6 /* AuthorStoryboard.storyboard */,
 				C1A2F949291E89BE0089AB3F /* Assets.xcassets */,
 				C1A2F94B291E89BE0089AB3F /* LaunchScreen.storyboard */,
 				C1A2F94E291E89BE0089AB3F /* Info.plist */,
@@ -143,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F624E397291ED9B3007486A6 /* AuthorStoryboard.storyboard in Resources */,
 				C1A2F94D291E89BE0089AB3F /* LaunchScreen.storyboard in Resources */,
 				C1A2F94A291E89BE0089AB3F /* Assets.xcassets in Resources */,
 				C1A2F955291E8A970089AB3F /* README.md in Resources */,
@@ -161,8 +171,10 @@
 				F624E38F291EBF65007486A6 /* MediaCell.swift in Sources */,
 				C1A2F945291E89BD0089AB3F /* HomeViewController.swift in Sources */,
 				C1A2F95D291EA7CA0089AB3F /* ViewControllerExtension.swift in Sources */,
+				F624E393291ECC9B007486A6 /* MediaViewController.swift in Sources */,
 				306BE77C291EB5A9000D8223 /* Media.swift in Sources */,
 				C1A2F941291E89BD0089AB3F /* AppDelegate.swift in Sources */,
+				F624E399291ED9C6007486A6 /* AuthorViewController.swift in Sources */,
 				C1A2F943291E89BD0089AB3F /* SceneDelegate.swift in Sources */,
 				306BE77A291EB36A000D8223 /* Author.swift in Sources */,
 			);
