@@ -11,12 +11,14 @@
 		306BE77C291EB5A9000D8223 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306BE77B291EB5A9000D8223 /* Media.swift */; };
 		C1A2F941291E89BD0089AB3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2F940291E89BD0089AB3F /* AppDelegate.swift */; };
 		C1A2F943291E89BD0089AB3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2F942291E89BD0089AB3F /* SceneDelegate.swift */; };
-		C1A2F945291E89BD0089AB3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2F944291E89BD0089AB3F /* ViewController.swift */; };
+		C1A2F945291E89BD0089AB3F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2F944291E89BD0089AB3F /* HomeViewController.swift */; };
 		C1A2F948291E89BD0089AB3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A2F946291E89BD0089AB3F /* Main.storyboard */; };
 		C1A2F94A291E89BE0089AB3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A2F949291E89BE0089AB3F /* Assets.xcassets */; };
 		C1A2F94D291E89BE0089AB3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A2F94B291E89BE0089AB3F /* LaunchScreen.storyboard */; };
 		C1A2F955291E8A970089AB3F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C1A2F954291E8A970089AB3F /* README.md */; };
 		C1A2F95D291EA7CA0089AB3F /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2F95C291EA7CA0089AB3F /* ViewControllerExtension.swift */; };
+		F624E38F291EBF65007486A6 /* MediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F624E38E291EBF65007486A6 /* MediaCell.swift */; };
+		F624E391291EC70C007486A6 /* MediaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F624E390291EC70C007486A6 /* MediaStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,13 +27,15 @@
 		C1A2F93D291E89BD0089AB3F /* Rocket Reviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rocket Reviews.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A2F940291E89BD0089AB3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1A2F942291E89BD0089AB3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C1A2F944291E89BD0089AB3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C1A2F944291E89BD0089AB3F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C1A2F947291E89BD0089AB3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C1A2F949291E89BE0089AB3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1A2F94C291E89BE0089AB3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1A2F94E291E89BE0089AB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1A2F954291E8A970089AB3F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C1A2F95C291EA7CA0089AB3F /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		F624E38E291EBF65007486A6 /* MediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCell.swift; sourceTree = "<group>"; };
+		F624E390291EC70C007486A6 /* MediaStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MediaStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +71,13 @@
 			children = (
 				C1A2F940291E89BD0089AB3F /* AppDelegate.swift */,
 				C1A2F942291E89BD0089AB3F /* SceneDelegate.swift */,
-				C1A2F944291E89BD0089AB3F /* ViewController.swift */,
+				C1A2F944291E89BD0089AB3F /* HomeViewController.swift */,
 				C1A2F95C291EA7CA0089AB3F /* ViewControllerExtension.swift */,
+				F624E38E291EBF65007486A6 /* MediaCell.swift */,
 				306BE77B291EB5A9000D8223 /* Media.swift */,
 				306BE779291EB36A000D8223 /* Author.swift */,
 				C1A2F946291E89BD0089AB3F /* Main.storyboard */,
+				F624E390291EC70C007486A6 /* MediaStoryboard.storyboard */,
 				C1A2F949291E89BE0089AB3F /* Assets.xcassets */,
 				C1A2F94B291E89BE0089AB3F /* LaunchScreen.storyboard */,
 				C1A2F94E291E89BE0089AB3F /* Info.plist */,
@@ -141,6 +147,7 @@
 				C1A2F94A291E89BE0089AB3F /* Assets.xcassets in Resources */,
 				C1A2F955291E8A970089AB3F /* README.md in Resources */,
 				C1A2F948291E89BD0089AB3F /* Main.storyboard in Resources */,
+				F624E391291EC70C007486A6 /* MediaStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +158,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1A2F945291E89BD0089AB3F /* ViewController.swift in Sources */,
+				F624E38F291EBF65007486A6 /* MediaCell.swift in Sources */,
+				C1A2F945291E89BD0089AB3F /* HomeViewController.swift in Sources */,
 				C1A2F95D291EA7CA0089AB3F /* ViewControllerExtension.swift in Sources */,
 				306BE77C291EB5A9000D8223 /* Media.swift in Sources */,
 				C1A2F941291E89BD0089AB3F /* AppDelegate.swift in Sources */,
@@ -303,7 +311,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = CP8876NY72;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rocket Reviews/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -311,6 +319,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,7 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = CP8876NY72;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rocket Reviews/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -339,6 +348,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

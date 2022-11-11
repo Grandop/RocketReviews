@@ -10,7 +10,7 @@ import Foundation
 // MARK: Authors and Medias
 // esse é o arquivo que gera os autores e as mídias pro MediaListViewController
 
-extension ViewController {
+extension HomeViewController {
     func createAuthors() -> [Author] {
         return [
             Author(
@@ -23,7 +23,7 @@ extension ViewController {
             ),
             Author(
                 name: "Émerson",
-                avatar: #imageLiteral(resourceName: "Émerson"),
+                avatar: #imageLiteral(resourceName: "Raul"),
                 description: "E aí pessoal, curto muito acampar e fazer trilhas, uma praia é sempre bem-vinda, porém, gosto mesmo é da serra e de ir para o meio do mato desvendar novas cachoeiras 😆. Também gosto muito de ir em cafeterias e restaurantes, principalmente com ambiente rústico.",
                 github: "https://github.com/emersonmluz",
                 instagram: "https://instagram.com/emersonmluz/",
@@ -47,7 +47,7 @@ extension ViewController {
             ),
             Author(
                 name: "Otávio",
-                avatar: #imageLiteral(resourceName: "Otávio"),
+                avatar: #imageLiteral(resourceName: "Raul"),
                 description: "Oii, sou o Otávio, tenho 18 anos, adoro jogar qualquer tipo de games, praticar vários esporte nas horas vagas e adoro sair para conversar no sol.",
                 github: "https://github.com/Otavinhofs",
                 instagram: "https://www.instagram.com/otavinhofs/",
@@ -91,7 +91,7 @@ extension ViewController {
     }
     
     func findAuthor(name: String) -> Author? {
-        authors.first { author in
+        authorsList.first { author in
             author.name == name
         }
     }
