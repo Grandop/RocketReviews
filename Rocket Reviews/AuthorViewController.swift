@@ -42,17 +42,43 @@ class AuthorViewController: UIViewController {
     func openLink(key: String){
         switch key{
         case "instagram":
-            let url = URL(string: author!.instagram)
-            UIApplication.shared.open(url!)
+            if author?.instagram != "sem"
+            {
+                let url = URL(string: author!.instagram)
+                UIApplication.shared.open(url!)
+            }
+            else{
+                let alert = UIAlertController(title: "Alerta", message: "O usuário não possuí \(key)", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .cancel))
+                self.present(alert, animated: true)
+            }
         case "linkedin":
-            let url = URL(string: author!.linkedin)
-            UIApplication.shared.open(url!)
+            if author?.linkedin != "sem"
+            {
+                let url = URL(string: author!.linkedin)
+                UIApplication.shared.open(url!)
+            }
+            else{
+                let alert = UIAlertController(title: "Alerta", message: "O usuário não possuí \(key)", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .cancel))
+                
+                self.present(alert, animated: true)
+            }
         case "github":
-            let url = URL(string: author!.github)
-            UIApplication.shared.open(url!)
+            if author?.github != "sem"
+            {
+                let url = URL(string: author!.github)
+                UIApplication.shared.open(url!)
+            }
+            else{
+                let alert = UIAlertController(title: "Alerta", message: "O usuário não possuí \(key)", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .cancel))
+                self.present(alert, animated: true)
+            }
         default:
             print("errou")
         }
     }
+    
     
 }
