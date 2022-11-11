@@ -12,7 +12,7 @@
         <!--Author View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="AuthorStoryboard" id="Y6W-OH-hqX" customClass="AuthorViewController" customModule="Rocket_Reviews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthorViewController" id="Y6W-OH-hqX" customClass="AuthorViewController" customModule="Rocket_Reviews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,9 +63,11 @@
                                     <constraint firstAttribute="height" constant="60" id="4uE-qV-YgJ"/>
                                     <constraint firstAttribute="width" constant="60" id="9oG-La-bDW"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="instagram"/>
+                                <state key="normal" title="Button" backgroundImage="instagram">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <action selector="instagranButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="oMO-QA-zIP"/>
+                                    <action selector="instagramButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8XD-wh-d8v"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIB-2v-skl">
@@ -74,20 +76,26 @@
                                     <constraint firstAttribute="width" constant="60" id="3yY-7L-Prn"/>
                                     <constraint firstAttribute="height" constant="60" id="DCK-xT-7p2"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="linkedin"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button" backgroundImage="linkedin">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <action selector="linkedinButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="htp-Zy-Xam"/>
+                                    <action selector="linkedinButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="blt-Lu-aO3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PkU-tg-F05">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PkU-tg-F05">
                                 <rect key="frame" x="315" y="740" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="jSo-9E-k80"/>
                                     <constraint firstAttribute="height" constant="60" id="js8-yD-kEE"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="github"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button" backgroundImage="github">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <action selector="githubButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1Tr-GK-mrH"/>
+                                    <action selector="githubButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="QyM-IV-Fia"/>
                                 </connections>
                             </button>
                         </subviews>

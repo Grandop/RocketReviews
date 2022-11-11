@@ -58,13 +58,14 @@ class MediaViewController: UIViewController {
 
     
     @IBAction func inspectProfileButtonPressed(_ sender: Any) {
+ 
+        let authorStoryboard: UIStoryboard = UIStoryboard(name: "AuthorStoryboard", bundle: nil)
+        let authorViewController = authorStoryboard.instantiateViewController(withIdentifier: "AuthorViewController") as! AuthorViewController
         
+        authorViewController.author = media?.author
         
+        self.present(authorViewController, animated: true)
     }
-    
-
-    
-   
     @IBAction func backButtonPressed(_ sender: Any) {
         
         self.dismiss(animated: true)

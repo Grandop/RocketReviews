@@ -24,7 +24,7 @@ extension HomeViewController {
             ),
             Author(
                 name: "Émerson",
-                avatar: #imageLiteral(resourceName: "Raul"),
+                avatar: #imageLiteral(resourceName: "Émerson"),
                 description: "E aí pessoal, curto muito acampar e fazer trilhas, uma praia é sempre bem-vinda, porém, gosto mesmo é da serra e de ir para o meio do mato desvendar novas cachoeiras 😆. Também gosto muito de ir em cafeterias e restaurantes, principalmente com ambiente rústico.",
                 github: "https://github.com/emersonmluz",
                 instagram: "https://instagram.com/emersonmluz/",
@@ -48,7 +48,7 @@ extension HomeViewController {
             ),
             Author(
                 name: "Otávio",
-                avatar: #imageLiteral(resourceName: "Pedro"),
+                avatar: #imageLiteral(resourceName: "Otávio"),
                 description: "Oii, sou o Otávio, tenho 18 anos, adoro jogar qualquer tipo de games, praticar vários esporte nas horas vagas e adoro sair para conversar no sol.",
                 github: "https://github.com/Otavinhofs",
                 instagram: "https://www.instagram.com/otavinhofs/",
