@@ -78,7 +78,7 @@ extension HomeViewController {
             Author(
                 name: "Pedro",
                 avatar: #imageLiteral(resourceName: "Pedro"),
-                description: "Opa! sou o Pedro, 18 anos, curto muito musculação, jogar no pc e topo fazer qualquer tipo de esporte também!",
+                description: "Opa! sou o Pedro, 19 anos, curto muito musculação, jogar no pc e topo fazer qualquer tipo de esporte também!",
                 github: "https://github.com/Grandop",
                 instagram: "https://www.instagram.com/grando_03/",
                 linkedin: "https://www.linkedin.com/in/pedro-grando-299300225/"
