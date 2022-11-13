@@ -25,7 +25,7 @@ class AuthorViewController: UIViewController {
         descriptionLabel.text = author?.description
         
         if descriptionLabel.text == "" {
-            descriptionLabel.text =  "Este perfil não há descrição!"
+            descriptionLabel.text =  "Este perfil não possui descrição."
         }
     }
     

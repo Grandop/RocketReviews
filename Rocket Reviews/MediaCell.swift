@@ -14,7 +14,7 @@ class MediaCell: UITableViewCell {
     @IBOutlet weak var authorNameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
-    func confgiCell(medias: Media) {
+    func configCell(medias: Media) {
         coverImage.image = medias.image
         titleLabel.text = medias.title
         authorNameLabel.text = medias.author.name

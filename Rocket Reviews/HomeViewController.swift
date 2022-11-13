@@ -20,10 +20,8 @@ class HomeViewController: UIViewController {
         mediaList = createMedias()
         tableView.dataSource = self
         tableView.delegate = self
-        
-        print("Authors \(authorsList.count), Media \(mediaList.count)")
-    }
 
+    }
 
 }
 
@@ -35,7 +33,7 @@ extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MediaCell
         
-        cell.confgiCell(medias: mediaList[indexPath.row])
+        cell.configCell(medias: mediaList[indexPath.row])
         return cell
     }
 }
@@ -49,7 +47,6 @@ extension HomeViewController : UITableViewDelegate {
         let mediaViewController = mediaStoryBoard.instantiateViewController(withIdentifier: "MediaViewController") as! MediaViewController
         
         mediaViewController.media = mediaList[indexPath.row]
-        print("alou")
         
         mediaViewController.modalPresentationStyle = .overFullScreen
         self.present(mediaViewController, animated: true)

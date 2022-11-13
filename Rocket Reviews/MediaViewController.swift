@@ -16,6 +16,7 @@ class MediaViewController: UIViewController {
     @IBOutlet weak var textAnalysis: UILabel!
     @IBOutlet weak var labelNameAuthor: UILabel!
     @IBOutlet weak var imageAuthor: UIImageView!
+    
     var media: Media?
     
     override func viewDidLoad() {
