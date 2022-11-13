@@ -100,6 +100,14 @@ extension HomeViewController {
     func createMedias() -> [Media] {
         return [
             Media(
+                title: "Peaky Blinders",
+                image: #imageLiteral(resourceName: "peaky-blinders"),
+                description: "A história se passa na Grã-Bretanha em 1919 e acompanha a família Shelby, uma gangue cruel que prosperou após a Primeira Guerra Mundial, quando atividades do submundo, como o comércio ilegal de armas, esquema ilegal de aposta em corrida de cavalos, proteção e golpes de jogo se tornaram frequentes.",
+                synopsis: "Com personagens fictícios entre fatos e personalidades da vida real, a série Peaky Blinders navega pela história europeia do início do século XX, indo desde o fim da I Guerra Mundial, passando pela ascensão do comunismo e dos levantes operários, até culminar nos horrores do fascismo e do nazismo..",
+                review: "Gostei muito, inclusive já assisti mais de 3 vezes mostra muito a realiade da população da época, e as situações políticas da Inglaterra. Recomendo muito!",
+                author: findAuthor(name: "Pedro")!
+            ),
+            Media(
                 title: "Sword Art Online",
                 image: #imageLiteral(resourceName: "sword_art_online"),
                 description: "Um garoto que gostava de video games se envolve em uma aventura em um jogo da morte e conhece muitos amigos assim como inimigos e o amor de sua vida.",

@@ -23,6 +23,10 @@ class AuthorViewController: UIViewController {
         nameLabel.text = author?.name
         avatar.image = author?.avatar
         descriptionLabel.text = author?.description
+        
+        if descriptionLabel.text == "" {
+            descriptionLabel.text =  "Este perfil não há descrição!"
+        }
     }
     
     @IBAction func backButton(_ sender: Any) {
@@ -50,6 +54,7 @@ class AuthorViewController: UIViewController {
             else{
                 let alert = UIAlertController(title: "Alerta", message: "O usuário não possuí \(key)", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: .cancel))
+                
                 self.present(alert, animated: true)
             }
         case "linkedin":
@@ -58,7 +63,7 @@ class AuthorViewController: UIViewController {
                 let url = URL(string: author!.linkedin)
                 UIApplication.shared.open(url!)
             }
-            else{
+            else {
                 let alert = UIAlertController(title: "Alerta", message: "O usuário não possuí \(key)", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: .cancel))
                 
@@ -70,15 +75,15 @@ class AuthorViewController: UIViewController {
                 let url = URL(string: author!.github)
                 UIApplication.shared.open(url!)
             }
-            else{
+            else {
                 let alert = UIAlertController(title: "Alerta", message: "O usuário não possuí \(key)", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: .cancel))
+                
                 self.present(alert, animated: true)
             }
         default:
             print("errou")
         }
     }
-    
     
 }
