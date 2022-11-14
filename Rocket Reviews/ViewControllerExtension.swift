@@ -178,7 +178,15 @@ extension HomeViewController {
                 synopsis: "Em Uma Advogada Extraordinária, Woo Young Woo (Park Eun Bin) é uma advogada de 27 anos no espectro autista. Young Woo é uma profissional excelente, tendo o QI de 164, ela se formou como a melhor estudante da turma na prestigiada Universidade Nacional de Seoul. Devido à sua inteligência e memória fotográfica, ela conseguiu um trabalho em um grande escritório de advocacia. Por outro lado, emocionalmente, Young Woo não se dá muito bem com interações sociais. Como resultado, muitos a enxergam como uma esquisita ou solitária, tendo sido alvo de bullying na escola. A série tem foco no crescimento de Young Woo como advogada e pessoa, enquanto ela conhece novas pessoas que irão fazer a diferença em sua vida.",
                 review: "Gostei bastante da série, por ser baseada em fatos reais, pois mostra a realidade das pessoas que possuem TEA, e a dificuldade que passam para serem incluidas na sociedade que mesmo com acesso as informacoes menosprezam suas necessidades tornando mais dificil a sua inclusao.",
                 author: findAuthor(name: "Bruna")!
+            ), Media(
+                title: "Game Of Thrones",
+                image: #imageLiteral(resourceName: "HODT"),
+                description: "Série baseada nos livro Gelo e fogo do escritor George R.R Martin",
+                synopsis: "------------",
+                review: "=========",
+                author: findAuthor(name: "Raul")!
             )
+            
         ]
     }
 }
