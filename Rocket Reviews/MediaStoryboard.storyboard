@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPv-A2-Ds0">
-                                <rect key="frame" x="30" y="43" width="49" height="35"/>
+                                <rect key="frame" x="5" y="43" width="74" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Back">
@@ -105,7 +105,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="......" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2V-tV-pry">
-                                <rect key="frame" x="16" y="282" width="358" height="88"/>
+                                <rect key="frame" x="16" y="282" width="358" height="131"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -123,7 +123,7 @@
                             <constraint firstItem="aHK-RT-kPZ" firstAttribute="bottom" secondItem="MHm-AJ-oVS" secondAttribute="bottom" id="9Sl-j0-01f"/>
                             <constraint firstItem="94F-2z-bYK" firstAttribute="trailing" secondItem="s3p-fK-Rj7" secondAttribute="trailing" id="9cd-vU-pSz"/>
                             <constraint firstItem="94F-2z-bYK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="9lg-Oa-eKn"/>
-                            <constraint firstItem="cgf-cP-DKg" firstAttribute="top" secondItem="J2V-tV-pry" secondAttribute="bottom" constant="58" id="9oe-U7-A90"/>
+                            <constraint firstItem="cgf-cP-DKg" firstAttribute="top" secondItem="J2V-tV-pry" secondAttribute="bottom" constant="15" id="9oe-U7-A90"/>
                             <constraint firstItem="cgf-cP-DKg" firstAttribute="trailing" secondItem="gOp-7g-0RG" secondAttribute="trailing" id="AbH-cg-tGS"/>
                             <constraint firstItem="ZKa-Vl-9nS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="BnI-Sc-Fjl"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="J2V-tV-pry" secondAttribute="trailing" constant="16" id="GLK-sW-hWS"/>
@@ -137,7 +137,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZKa-Vl-9nS" secondAttribute="trailing" constant="273" id="Qu5-Vq-F9b"/>
                             <constraint firstItem="aHK-RT-kPZ" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="SFR-4H-JVo"/>
                             <constraint firstItem="MHm-AJ-oVS" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="TOE-ww-6IV"/>
-                            <constraint firstItem="oPv-A2-Ds0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="UZJ-lP-qRn"/>
+                            <constraint firstItem="oPv-A2-Ds0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="5" id="UZJ-lP-qRn"/>
                             <constraint firstItem="Jeq-2n-O4h" firstAttribute="leading" secondItem="oPv-A2-Ds0" secondAttribute="trailing" constant="28" id="Utw-dS-MT6"/>
                             <constraint firstItem="J2V-tV-pry" firstAttribute="top" secondItem="gOp-7g-0RG" secondAttribute="bottom" constant="8" symbolic="YES" id="WUd-xF-TQF"/>
                             <constraint firstItem="cgf-cP-DKg" firstAttribute="trailing" secondItem="aHK-RT-kPZ" secondAttribute="trailing" id="WcU-fC-5cQ"/>
