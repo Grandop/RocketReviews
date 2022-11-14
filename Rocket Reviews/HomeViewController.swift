@@ -42,9 +42,9 @@ class HomeViewController: UIViewController {
                     let textUserSplited = textUser.components(separatedBy: " ")
                     for words in textUserSplited // comparando cada palabra do usuario com cada palavra do titulo
                     {
-                        for title in titleSplited
+                        for wordTitle in titleSplited
                         {
-                            if title.lowercased() == words.lowercased()
+                            if wordTitle.lowercased() == words.lowercased()
                             {
                                 showMediaList.append(media)
                             }
@@ -53,7 +53,7 @@ class HomeViewController: UIViewController {
                 }
             }
         }
-        
+        showMediaList = verifyDuplicity()
         tableView.reloadData()
     }
     
@@ -62,6 +62,26 @@ class HomeViewController: UIViewController {
         searchBarTextField.resignFirstResponder()
     }
     
+    func verifyDuplicity() -> [Media]
+    {
+        var mediaToReturn = showMediaList
+        
+        for media in showMediaList{
+            var count : Int = 0
+            for index in 0...(mediaToReturn.count - 1) {
+                if media.title == mediaToReturn[index].title{
+                    count += 1
+                }
+                
+                if count > 1{
+                    mediaToReturn.remove(at: index)
+                    count = 1
+                    }
+                }
+            }
+        
+        return mediaToReturn
+    }
     
     @IBAction func searchButtonSelect(_ sender: UIButton) {
         searchTitle(title: searchBarTextField.text!)
