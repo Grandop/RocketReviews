@@ -11,9 +11,11 @@ class MediaViewController: UIViewController {
 
     @IBOutlet weak var serieLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var textSummary: UILabel!
-    @IBOutlet weak var textSynopse: UILabel!
-    @IBOutlet weak var textAnalysis: UILabel!
+    
+    @IBOutlet weak var textSummary: UITextView!
+    @IBOutlet weak var textSynopse: UITextView!
+    @IBOutlet weak var textAnalysis: UITextView!
+    
     @IBOutlet weak var labelNameAuthor: UILabel!
     @IBOutlet weak var imageAuthor: UIImageView!
     
