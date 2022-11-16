@@ -52,12 +52,13 @@ class AuthorViewController: UIViewController {
             linkedinButton.isUserInteractionEnabled = false
         }
         if author?.instagram == "sem" {
-            linkedinButton.isHighlighted = true
-            linkedinButton.isUserInteractionEnabled = false
+            instagramButton.isHighlighted = true
+            instagramButton.isUserInteractionEnabled = false
         }
         if author?.github == "sem" {
-            linkedinButton.isHighlighted = true
-            linkedinButton.isUserInteractionEnabled = false
+            print("opa")
+            githubButton.isEnabled = false
+            
         }
     }
     
@@ -76,7 +77,8 @@ class AuthorViewController: UIViewController {
         case "linkedin":
             let url = URL(string: author!.linkedin)
             UIApplication.shared.open(url!)
-    
+        
+            
         case "github":
             let url = URL(string: author!.github)
             UIApplication.shared.open(url!)
