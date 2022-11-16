@@ -53,6 +53,7 @@ class HomeViewController: UIViewController {
                 }
             }
         }
+        
         showMediaList = verifyDuplicity()
         tableView.reloadData()
     }
@@ -98,6 +99,7 @@ extension HomeViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MediaCell
         
         cell.configCell(medias: showMediaList[indexPath.row])
+        
         return cell
     }
 }

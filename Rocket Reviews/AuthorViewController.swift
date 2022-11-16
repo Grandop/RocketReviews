@@ -13,6 +13,9 @@ class AuthorViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var avatar: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var githubButton: UIButton!
+    @IBOutlet weak var linkedinButton: UIButton!
+    @IBOutlet weak var instagramButton: UIButton!
     
     var author : Author?
     
@@ -24,9 +27,8 @@ class AuthorViewController: UIViewController {
         avatar.image = author?.avatar
         descriptionLabel.text = author?.description
         
-        if descriptionLabel.text == "" {
-            descriptionLabel.text =  "Este perfil não possui descrição."
-        }
+        disableLinksButtons()
+        checkIfAuthorHaveDescription(description: descriptionLabel.text ?? "")
     }
     
     @IBAction func backButton(_ sender: Any) {
@@ -35,12 +37,36 @@ class AuthorViewController: UIViewController {
     
     @IBAction func instagramButtonPressed(_ sender: UIButton) {
         openLink(key: "instagram")
+        
     }
     @IBAction func linkedinButtonPressed(_ sender: UIButton) {
         openLink(key: "linkedin")
     }
     @IBAction func githubButtonPressed(_ sender: UIButton) {
         openLink(key: "github")
+    }
+    
+    func disableLinksButtons() {
+        if author?.linkedin == "sem" {
+            linkedinButton.isEnabled = false
+        }
+        
+        if author?.instagram == "sem" {
+            
+            instagramButton.isEnabled = false
+            
+        }
+        if author?.github == "sem" {
+            
+            githubButton.isEnabled = false
+            
+        }
+    }
+    
+    func checkIfAuthorHaveDescription(description: String) {
+        if descriptionLabel.text == "" {
+            descriptionLabel.text =  "Este perfil não possui descrição."
+        }
     }
     
     func openLink(key: String){
@@ -52,9 +78,10 @@ class AuthorViewController: UIViewController {
                 UIApplication.shared.open(url!)
             }
             else{
+            
                 let alert = UIAlertController(title: "Alerta", message: "O usuário não possuí \(key)", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: .cancel))
-                
+            
                 self.present(alert, animated: true)
             }
         case "linkedin":
@@ -64,6 +91,7 @@ class AuthorViewController: UIViewController {
                 UIApplication.shared.open(url!)
             }
             else {
+                
                 let alert = UIAlertController(title: "Alerta", message: "O usuário não possuí \(key)", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: .cancel))
                 
@@ -76,6 +104,7 @@ class AuthorViewController: UIViewController {
                 UIApplication.shared.open(url!)
             }
             else {
+                
                 let alert = UIAlertController(title: "Alerta", message: "O usuário não possuí \(key)", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: .cancel))
                 

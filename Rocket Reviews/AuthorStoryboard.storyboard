@@ -78,6 +78,7 @@
                                     <constraint firstAttribute="height" constant="60" id="DCK-xT-7p2"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button" backgroundImage="linkedin">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -127,6 +128,9 @@
                     <connections>
                         <outlet property="avatar" destination="0FR-4H-YDI" id="wC1-0p-EmN"/>
                         <outlet property="descriptionLabel" destination="Z2e-8e-865" id="AbQ-8X-lgs"/>
+                        <outlet property="githubButton" destination="PkU-tg-F05" id="j0e-p9-2Eg"/>
+                        <outlet property="instagramButton" destination="LHb-6Y-fNW" id="iD8-fX-yxg"/>
+                        <outlet property="linkedinButton" destination="NIB-2v-skl" id="BQr-VD-2Dw"/>
                         <outlet property="nameLabel" destination="S8E-O3-7X2" id="gta-yb-JVx"/>
                         <outlet property="titleLabel" destination="xtT-Tg-6B5" id="2LH-so-DFb"/>
                     </connections>
