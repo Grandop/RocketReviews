@@ -48,18 +48,16 @@ class AuthorViewController: UIViewController {
     
     func disableLinksButtons() {
         if author?.linkedin == "sem" {
-            linkedinButton.isEnabled = false
+            linkedinButton.isHighlighted = true
+            linkedinButton.isUserInteractionEnabled = false
         }
-        
         if author?.instagram == "sem" {
-            
-            instagramButton.isEnabled = false
-            
+            linkedinButton.isHighlighted = true
+            linkedinButton.isUserInteractionEnabled = false
         }
         if author?.github == "sem" {
-            
-            githubButton.isEnabled = false
-            
+            linkedinButton.isHighlighted = true
+            linkedinButton.isUserInteractionEnabled = false
         }
     }
     
@@ -72,44 +70,17 @@ class AuthorViewController: UIViewController {
     func openLink(key: String){
         switch key{
         case "instagram":
-            if author?.instagram != "sem"
-            {
-                let url = URL(string: author!.instagram)
-                UIApplication.shared.open(url!)
-            }
-            else{
+            let url = URL(string: author!.instagram)
+            UIApplication.shared.open(url!)
             
-                let alert = UIAlertController(title: "Alerta", message: "O usuário não possuí \(key)", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Ok", style: .cancel))
-            
-                self.present(alert, animated: true)
-            }
         case "linkedin":
-            if author?.linkedin != "sem"
-            {
-                let url = URL(string: author!.linkedin)
-                UIApplication.shared.open(url!)
-            }
-            else {
-                
-                let alert = UIAlertController(title: "Alerta", message: "O usuário não possuí \(key)", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Ok", style: .cancel))
-                
-                self.present(alert, animated: true)
-            }
+            let url = URL(string: author!.linkedin)
+            UIApplication.shared.open(url!)
+    
         case "github":
-            if author?.github != "sem"
-            {
-                let url = URL(string: author!.github)
-                UIApplication.shared.open(url!)
-            }
-            else {
-                
-                let alert = UIAlertController(title: "Alerta", message: "O usuário não possuí \(key)", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Ok", style: .cancel))
-                
-                self.present(alert, animated: true)
-            }
+            let url = URL(string: author!.github)
+            UIApplication.shared.open(url!)
+            
         default:
             print("errou")
         }
